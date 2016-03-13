@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2FA9A1B01C7CB73D00882455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA9A1AF1C7CB73D00882455 /* AppDelegate.swift */; };
-		2FA9A1B21C7CB73D00882455 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA9A1B11C7CB73D00882455 /* ViewController.swift */; };
+		2FA9A1B21C7CB73D00882455 /* EnigmaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA9A1B11C7CB73D00882455 /* EnigmaViewController.swift */; };
 		2FA9A1B51C7CB73D00882455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA9A1B31C7CB73D00882455 /* Main.storyboard */; };
 		2FA9A1B71C7CB73D00882455 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FA9A1B61C7CB73D00882455 /* Assets.xcassets */; };
 		2FA9A1BA1C7CB73D00882455 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA9A1B81C7CB73D00882455 /* LaunchScreen.storyboard */; };
@@ -28,7 +28,7 @@
 /* Begin PBXFileReference section */
 		2FA9A1AC1C7CB73D00882455 /* Enigma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Enigma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA9A1AF1C7CB73D00882455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2FA9A1B11C7CB73D00882455 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2FA9A1B11C7CB73D00882455 /* EnigmaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnigmaViewController.swift; sourceTree = "<group>"; };
 		2FA9A1B41C7CB73D00882455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2FA9A1B61C7CB73D00882455 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FA9A1B91C7CB73D00882455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				2FA9A1AF1C7CB73D00882455 /* AppDelegate.swift */,
-				2FA9A1B11C7CB73D00882455 /* ViewController.swift */,
+				2FA9A1B11C7CB73D00882455 /* EnigmaViewController.swift */,
 				2FA9A1B31C7CB73D00882455 /* Main.storyboard */,
 				2FA9A1B61C7CB73D00882455 /* Assets.xcassets */,
 				2FA9A1B81C7CB73D00882455 /* LaunchScreen.storyboard */,
@@ -198,7 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FA9A1B21C7CB73D00882455 /* ViewController.swift in Sources */,
+				2FA9A1B21C7CB73D00882455 /* EnigmaViewController.swift in Sources */,
 				2FA9A1B01C7CB73D00882455 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +393,7 @@
 				2FA9A1CB1C7CB73D00882455 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FA9A1CC1C7CB73D00882455 /* Build configuration list for PBXNativeTarget "EnigmaTests" */ = {
 			isa = XCConfigurationList;
@@ -401,6 +402,7 @@
 				2FA9A1CE1C7CB73D00882455 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
