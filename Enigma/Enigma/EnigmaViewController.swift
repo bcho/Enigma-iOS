@@ -8,6 +8,7 @@
 
 import UIKit
 import CryptoSwift
+import JLToast
 
 class EnigmaViewController: UIViewController, UITextFieldDelegate {
     
@@ -38,7 +39,7 @@ class EnigmaViewController: UIViewController, UITextFieldDelegate {
     
     func copyPassword(field: UITextField) {
         UIPasteboard.generalPasteboard().string = password.text!
-        print("copied!")
+        JLToast.makeText("Copied!").show()
     }
     
 }
