@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CryptoSwift
 
 class EnigmaViewController: UIViewController {
     
@@ -21,7 +22,9 @@ class EnigmaViewController: UIViewController {
     }
     
     func siteChanged(field: UITextField) {
-        password.text = site.text!
+        let hashed = String(site.text!.sha1())
+        let end = hashed.startIndex.advancedBy(10)
+        password.text = hashed.substringToIndex(end)
     }
     
     func copyPassword(field: UITextField) {
