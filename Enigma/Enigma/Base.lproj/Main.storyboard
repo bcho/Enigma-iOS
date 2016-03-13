@@ -9,7 +9,7 @@
         <!--Enigma View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="EnigmaViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="EnigmaViewController" customModule="Enigma" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -73,6 +73,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="password" destination="hps-dx-0tb" id="d77-CM-qnb"/>
+                        <outlet property="site" destination="8CC-ht-aOF" id="3ZQ-mr-krr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

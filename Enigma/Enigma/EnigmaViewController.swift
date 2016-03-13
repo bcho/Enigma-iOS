@@ -10,17 +10,24 @@ import UIKit
 
 class EnigmaViewController: UIViewController {
     
+    @IBOutlet weak var password: UITextField!
     @IBOutlet weak var site: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         site.addTarget(self, action: "siteChanged:", forControlEvents: UIControlEvents.EditingChanged)
+        site.addTarget(self, action: "copyPassword:", forControlEvents: UIControlEvents.EditingDidEndOnExit)
     }
     
     func siteChanged(field: UITextField) {
-        print(field.text!)
+        password.text = site.text!
     }
-
+    
+    func copyPassword(field: UITextField) {
+        UIPasteboard.generalPasteboard().string = password.text!
+        print("copied!")
+    }
+    
 }
 
