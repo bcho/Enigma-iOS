@@ -11,6 +11,8 @@ import CryptoSwift
 
 class EnigmaViewController: UIViewController {
     
+    var MASTER = "MASTER_PASSWORD"
+    
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var site: UITextField!
     
@@ -22,9 +24,13 @@ class EnigmaViewController: UIViewController {
     }
     
     func siteChanged(field: UITextField) {
-        let hashed = String(site.text!.sha1())
-        let end = hashed.startIndex.advancedBy(10)
-        password.text = hashed.substringToIndex(end)
+        if site.text! != "" {
+            let hashed = (site.text! + MASTER).sha1()
+            let end = hashed.startIndex.advancedBy(10)
+            password.text = hashed.substringToIndex(end)
+        } else {
+            password.text = nil
+        }
     }
     
     func copyPassword(field: UITextField) {
