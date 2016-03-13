@@ -9,7 +9,7 @@
 import UIKit
 import CryptoSwift
 
-class EnigmaViewController: UIViewController {
+class EnigmaViewController: UIViewController, UITextFieldDelegate {
     
     var MASTER = "MASTER_PASSWORD"
     
@@ -18,6 +18,9 @@ class EnigmaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        site.delegate = self
+        site.becomeFirstResponder()
         
         site.addTarget(self, action: "siteChanged:", forControlEvents: UIControlEvents.EditingChanged)
         site.addTarget(self, action: "copyPassword:", forControlEvents: UIControlEvents.EditingDidEndOnExit)
