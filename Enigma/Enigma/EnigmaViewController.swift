@@ -20,6 +20,13 @@ class EnigmaViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = UIColor(
+            red: 0xdd / 0xff,
+            green: 0xe9 / 0xff,
+            blue: 0xf1 / 0xff,
+            alpha:1
+        )
+        
         site.delegate = self
         site.becomeFirstResponder()
         
