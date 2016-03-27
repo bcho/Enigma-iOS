@@ -39,6 +39,8 @@ class EnigmaViewController: UIViewController, UITextFieldDelegate {
     
     func copyPassword(field: UITextField) {
         UIPasteboard.generalPasteboard().string = password.text!
+        password.text = ""
+        site.text = ""
         JLToast.makeText("Copied!").show()
     }
     
